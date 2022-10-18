@@ -7,10 +7,10 @@ export class AuthController {
   // @RouteConfig('POST', 'auth/login')
   @Post('login')
   login() {
-    return 'Im login';
+    return this.authService.login();
   }
   @Post('signup')
   signup() {
-    return 'Im signup';
+    return this.authService.signup();
   }
 }
