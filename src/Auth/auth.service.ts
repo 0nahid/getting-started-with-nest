@@ -13,4 +13,14 @@ export class AuthService {
       msg: 'Successfully signed up',
     };
   }
+  me() {
+    return {
+      status: 200,
+      msg: 'Successfully fetched user',
+      data: {
+        name: 'Nahid',
+        role: 'admin',
+      },
+    };
+  }
 }
